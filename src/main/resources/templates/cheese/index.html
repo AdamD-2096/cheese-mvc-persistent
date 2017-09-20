@@ -8,6 +8,11 @@
 
 <nav th:replace="fragments :: navigation"></nav>
 
+<nav>
+    <a href="/cheese/add">Add</a>|
+    <a href="/cheese/remove">Remove</a>
+</nav>
+
 <p th:unless="${cheeses} and ${cheeses.size()}">no cheese :(</p>
 
 
