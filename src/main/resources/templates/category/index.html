@@ -8,6 +8,10 @@
 
     <nav th:replace="fragments :: navigation"></nav>
 
+    <nav>
+        <a href="/category/add">Add Category</a>
+    </nav>
+
     <ul>
         <li th:each="category : ${categories}" ><a th:href="@{'/cheese/category/' + ${category.getId()}}"  th:text="${category.getName()}"></a></li>
 
